@@ -1,0 +1,154 @@
+.addForm {
+  margin: 0 auto;
+  padding: 32px 0 28px 0;
+  max-width: 790px;
+  background-color: #f4f2ff;
+  box-shadow: 0 0 0 2px #e5e5e5;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 580px;
+}
+
+.addForm__title {
+  margin-bottom: 43px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
+
+.addForm__close {
+  max-width: 20px;
+}
+
+.addForm__close::after {
+  position: absolute;
+  display: inline-block;
+  left: 1300px;
+  top:20px;
+  content: "";
+  background: url("../img/close.svg") no-repeat center;
+  height: 20px;
+  width: 20px;
+}
+
+.form__fieldset {
+  margin-bottom: 32px;
+  padding: 28px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px #00000005;
+}
+
+.form__label {
+  display: block;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+.form__label:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.form__label-name {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.form__input {
+  display: block;
+  height: 40px;
+  width: 524px;
+  background-color: #f4f2ff;
+  border: none;
+  border-radius: 6px;
+}
+
+.form__discount-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.form__discount-title {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.form__discount-checkbox {
+  position: absolute;
+  margin-left: -70px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__discount-checkbox::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 70px;
+  background-color: #f4f2ff;
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+}
+
+.form__discount-checkbox::after {
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: 80px;
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  height: 10px;
+  width: 20px;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.form__discount-checkbox:checked:after {
+  opacity: 1
+}
+
+.form__discount-input {
+  height: 40px;
+  width: 474px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 6px;
+}
+
+.form__description {
+  display: block;
+  border: none;
+  background-color: #f4f2ff;
+  border-radius: 6px;
+  height: 112px;
+  width: 524px;
+  resize: none;
+}
+
+.form__btn-wrapper {
+  padding-left: 352px;
+}
+
+.form__btn {
+  padding: 10px 25px;
+  background-color: #6D5BD0;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: uppercase;
+}

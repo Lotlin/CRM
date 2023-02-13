@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Добавление товара</title>
+  <link rel="preload" href="fonts/inter_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter_semi_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <article class="addForm">
+    <div class="container">
+      <h1 class="addForm__title">Добавить товар</h1>
+      <div class="addForm__close"></div>
+      <form class="form" action="#" method="post">
+        <fieldset class="form__fieldset">
+          <label class="form__label">
+            <span class="form__label-name">Наименование</span>
+            <input class="form__input" type="text" name="name">
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-name">Категория</span>
+            <input class="form__input" type="text" name="category">
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-name">Единицы измерения</span>
+            <input class="form__input" type="text" name="unit">
+          </label>
+
+          <fieldset class="form__discount-wrapper">
+            <legend class="form__discount-title">Дисконт</legend>
+            <label class="form__label">
+              <input class="form__discount-checkbox" type="checkbox" name="discountCheck" value="yes">
+            </label>
+            <label>
+              <input class="form__discount-input" type="text" name="discount" disabled>
+            </label>
+          </fieldset>
+
+          <label class="form__label form__description-label">
+            <span class="form__label-name">Описание</span>
+            <textarea class="form__description" name="description"></textarea>
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-name">Количество</span>
+            <input class="form__input" type="text" name="quantity">
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-name">Цена</span>
+            <input class="form__input" type="text" name="price">
+          </label>
+        </fieldset>
+        <div class="form__btn-wrapper">
+          <button class="form__btn" type="submit" value="addGoodsBtn">Добавить товар</button>
+        </div>
+      </form>
+    </div>
+  </article>
+</body>
+</html>
